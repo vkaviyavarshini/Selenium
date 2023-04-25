@@ -1,0 +1,63 @@
+{
+  "id": "7fca4df7-b2a7-4780-950f-89a9a73e17fb",
+  "version": "2.0",
+  "name": "task5",
+  "url": "https://demo.opencart.com",
+  "tests": [{
+    "id": "6c9f758a-6b22-44db-8ef7-1836d9dd8d93",
+    "name": "Untitled",
+    "commands": [{
+      "id": "a53e8e30-de4a-481b-926d-e259c6d10e97",
+      "comment": "",
+      "command": "open",
+      "target": "https://demo.opencart.com/index.php?route=checkout/voucher&language=en-gb",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d0a488eb-dc7e-45ed-921d-d692b1334494",
+      "comment": "",
+      "command": "executeScript",
+      "target": "window.scroll(0,500)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d038f9fb-2e9d-4927-87f7-155e124233e3",
+      "comment": "",
+      "command": "assertValue",
+      "target": "id=input-amount",
+      "targets": [],
+      "value": "1"
+    }, {
+      "id": "063ea58b-eae1-465b-b27b-904aed9e3eb3",
+      "comment": "",
+      "command": "click",
+      "target": "name=agree",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "48032cb0-0d1a-4b31-b045-2a6831df4046",
+      "comment": "",
+      "command": "verifyChecked",
+      "target": "name=agree",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9c1f0001-3576-4cf0-a3a7-9dfd1756ae6a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.form-check-label:nth-child(1)",
+      "targets": [],
+      "value": "I understand that gift certificates are non-refundable"
+    }]
+  }],
+  "suites": [{
+    "id": "308fdb58-fd8a-4c5b-a218-247239e333bb",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["6c9f758a-6b22-44db-8ef7-1836d9dd8d93"]
+  }],
+  "urls": ["https://demo.opencart.com/"],
+  "plugins": []
+}
